@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #656565;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.clothing-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.clothing-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* 10px to rem */
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 12.5rem; /* 200px to rem */
+    max-width: 100%; /* Ensures the item does not overflow the container */
+}
+
+.clothing-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.description {
+    margin: 0.5rem 0;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Darken on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .clothing-item {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0.5rem 0; /* Reduce margin for smaller devices */
+    }
+
+    .clothing-showcase {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+@media (min-width: 769px) {
+    .clothing-item {
+        width: 15rem; /* Adjust width for larger screens */
+    }
+}
